@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styling.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <script>
+   function show_value2(x)
+{
+ document.getElementById("slider_value2").innerHTML=x;
+}
+function add_one()
+{
+  document.f.sld6.value=parseInt(document.f.sld6.value)+1;
+  show_value2(document.f.sld6.value);
+}
+function subtract_one()
+{
+  document.f.sld6.value=parseInt(document.f.sld6.value)-1;
+  show_value2(document.f.sld6.value);
+}
+
+  </script>
+
+  
+
+  <body>
+      <h1>
+          Lux*
+      </h1>
+      <nav id="mobile_menu"></nav>
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+          <ul>
+              <li><a href="Project.html" class="current">Home</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Room.html">Rooms</a>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    </ul>
+                    </li>
+              <li><a href="Activity.html">Activity</a></li>
+              <li><a href="contactPage.html">Contact</a>
+              </li>
+          </ul>
+      </nav>
+  
+  
+  
+      <h1>  <br>
+      </h1>
+      
+      <div class="booking">           
+             <!--Room-->
+            <button class="btn"><i class="material-icons">meeting_room</i> Room 
+              <i class="material-icons">expand_more</i>
+            </button>
+              <div class="dropdown-content">
+                <h6>Master Suite</h6>
+                <h6>Junior Suite</h6>
+                <h6>Single</h6>
+                <h6>Double</h6>
+                <h6>Twin</h6>
+                <h6>King</h6>
+                <h6>Queen</h6>
+              </div>           
+      </div>
+
+  
+             <div class="booking">  
+            <!--Guest-->
+            <button class="btn"><i class="material-icons">person</i>Guest<i class="material-icons">expand_more</i>
+            </button>
+              <div class="dropdown-content">
+                <span id="slider_value2" style="color:rgb(10, 114, 142);font-weight:bold;"></span><br>
+                <input type="range" min="1" max="10" step="1" name="sld6" value="2" onchange="show_value2(this.value)"> 
+               
+              </div>           
+            </div>
+      
+            
+            <div class="booking"> 
+            <!--Check in-->
+            <button class="btn"><i class="material-icons">calendar_today</i> Check-in <i class="material-icons">expand_more</i>
+            </button>
+              <div class="dropdown-content">
+                <input type="date" id="birthday" name="birthday"> 
+              </div>           
+            </div>
+              
+            
+            <div class="booking"> 
+             <!--Check out-->
+            <button class="btn"><i class="material-icons">calendar_today</i> Check-out<i class="material-icons">expand_more</i></button>
+              <div class="dropdown-content">
+                <input type="date" id="birthday" name="birthday"> 
+          </div>           
+        </div>
+
+        <div class="booking"> 
+            <button>Book</button>
+             </div>           
+     
+  </body>
+</html>
