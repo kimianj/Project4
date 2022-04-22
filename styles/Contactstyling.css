@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("contactPage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0eb7d4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #217075;
+}
+h1{
+  color:rgb(143, 133, 106);
+  font-size:60px;
+  text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(128, 152, 240);
+    padding: 20px 50px;
+    opacity: 0.8;
+
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #a2dbe6;
+    padding: 20px 50px;
+    opacity: 0.8;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  #nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity: 0.7;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(128, 179, 176);
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: white;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+  background-color: rgb(1, 132, 255);
+    color: white;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li ul {
+    width: 20%;
+}
+ /* Change the color of links on hover*/
+ #nav_menu a:hover {
+    background-color: rgb(1, 132, 255);
+    color: white;
+  }
+ 
+  aside img {
+    padding-bottom: 1em;
+    float:left
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }

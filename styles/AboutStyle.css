@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, black, sans-serif;
+  
+    font-size: 100%;
+  
+    width: 1460px;
+  
+    margin: 0 auto;
+    background-color: rgb(242, 233, 223);
+    /*border: 3px solid #13b1e1;*/
+  
+  }
+  h1{
+      color:rgb(143, 133, 106);
+      font-size:55px;
+      text-align: center;
+  }
+    
+    #nav_menu ul {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      opacity: 0.7;
+  }
+  #nav_menu ul li {
+      flex-basis: 20%;
+  }
+  #nav_menu ul li a {
+      display: block;
+      text-align: center;
+      padding: 1em 0;
+      text-decoration: none;
+      background-color: rgb(128, 179, 176);
+      color: white;
+      font-weight: bold;
+  }
+  #nav_menu a.current {
+      color: white;
+  }
+  #nav_menu ul ul {
+      width: 100%;
+      display: none;
+      position: absolute;
+      top: 100%;
+  }
+  #nav_menu ul li:hover > ul {
+      display: block;
+    background-color: rgb(1, 132, 255);
+      color: white;
+  }
+  #nav_menu > ul::after {
+      content: "";
+      clear: both;
+      display: block;
+  }
+  #nav_menu ul li ul {
+      width: 20%;
+  }
+   /* Change the color of links on hover*/
+   #nav_menu a:hover {
+      background-color: rgb(1, 132, 255);
+      color: white;
+    }
+    section {
+      width: 575px;
+      float: right;
+      padding: 0 20px 20px 20px;
+    }
+    section h2 {
+      font-size: 150%;
+      padding: .5em 0 .25em 0;
+      margin: 0; 
+    }
+    section p {
+      padding-bottom: .5em;
+    }
+    article {
+      font-family: cursive;
+      padding: .5em 0;
+      line-height: 2em;
+     
+    }
+    aside {
+      width: 215px;
+      float: left;
+
+    
+    }
+    
+    aside img {
+      float: left;
+      padding-bottom: 1em;
+      width:800px;
+      height:600px;
+      margin-top: 3cm;
+    }
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  

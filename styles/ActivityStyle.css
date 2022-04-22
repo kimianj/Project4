@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: rgb(237, 223, 207);
+  }
+
+  h1{
+    color:rgb(143, 133, 106);
+    font-size:60px;
+    text-align: center;
+}
+
+#nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity: 0.7;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(128, 179, 176);
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: white;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+  background-color: rgb(1, 132, 255);
+    color: white;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li ul {
+    width: 20%;
+}
+ /* Change the color of links on hover*/
+ #nav_menu a:hover {
+    background-color: rgb(1, 132, 255);
+    color: white;
+  }
+
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+ p{
+   text-align: center;
+ }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }

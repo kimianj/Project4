@@ -1,0 +1,160 @@
+body {
+    background-image: url('homepage.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  h1{
+      color:rgb(143, 133, 106);
+      font-size:60px;
+      text-align: center;
+  }
+ 
+  .booking{
+    background-color: #87ace3;
+    opacity: 0.7;
+    overflow: visible;
+    border-radius: 30px;
+    padding: 15px 15px;
+    font-size: 25px;
+    float:left;
+  }
+
+   .booking a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+   
+  }
+  
+  #nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity: 0.7;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(128, 179, 176);
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: white;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+  background-color: rgb(1, 132, 255);
+    color: white;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li ul {
+    width: 20%;
+}
+ /* Change the color of links on hover*/
+ #nav_menu a:hover {
+    background-color: rgb(1, 132, 255);
+    color: white;
+  }
+  /* Icon Set Up*/
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  .booking button {
+    background-color: #1280ba;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px #004c7b;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content h6 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .booking:hover .dropdown-content {
+    display: block;
+  }
+  
+  .booking:hover .btn {
+    background-color: #070345;
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
