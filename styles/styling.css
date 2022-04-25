@@ -150,6 +150,15 @@ body {
   .booking:hover .btn {
     background-color: #070345;
   }
+ footer {
+      clear: both;
+    
+    }
+    footer p {
+      text-align: center;
+      color: rgb(7, 7, 7);
+      padding: 1em 0;
+    }
   @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
