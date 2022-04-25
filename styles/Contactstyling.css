@@ -117,6 +117,15 @@ h5{
     padding-bottom: 1em;
     float:left
   }
+ footer {
+      clear: both;
+    
+    }
+    footer p {
+      text-align: center;
+      color: rgb(7, 7, 7);
+      padding: 1em 0;
+    }
  @media only screen and (max-width: 620px) {
     .aside, .section, .nav_menu, .h1, .h3, .h4, .h5  {
       width: 100%;
