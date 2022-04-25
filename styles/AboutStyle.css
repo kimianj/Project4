@@ -98,6 +98,16 @@ body{
       height:600px;
       margin-top: 3cm;
     }
+ footer {
+      background-color:rgb(242, 233, 223);
+      clear: both;
+    
+    }
+    footer p {
+      text-align: center;
+      color: rgb(7, 7, 7);
+      padding: 1em 0;
+    }
     @media screen and (max-width: 500px) {
       .aside, .section, .nav_menu, h1 {
         float: none;
