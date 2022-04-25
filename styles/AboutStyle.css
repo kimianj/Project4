@@ -99,7 +99,7 @@ body{
       margin-top: 3cm;
     }
     @media screen and (max-width: 500px) {
-      .navbar a {
+      .aside, .section, .nav_menu, h1 {
         float: none;
         display: block;
         width: 100%;
